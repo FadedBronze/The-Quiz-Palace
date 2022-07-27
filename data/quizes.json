@@ -1,0 +1,57 @@
+[
+    {
+        "name": "quiz of the quiz",
+        "questions": [
+            {
+                "name": "idk1", 
+                "correct": [0],
+                "answers": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            {
+                "name": "idk1", 
+                "correct": [0],
+                "answers": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            {
+                "name": "idk1", 
+                "correct": [0],
+                "answers": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            {
+                "name": "idk1", 
+                "correct": [0],
+                "answers": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            {
+                "name": "idk1", 
+                "correct": [0],
+                "answers": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            }
+        ]
+    }
+]

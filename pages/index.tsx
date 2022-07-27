@@ -2,16 +2,17 @@ import Head from 'next/head'
 import Navbar from '../components/Navbar/Navbar'
 import QuizDisplay from '../components/QuizDisplay/QuizDisplay'
 
+import Test from '../public/images/Test.png'
 
 
 export default function Home() {
   const data = [
-    {name: "w", img: "", difficulty: 0},
-    {name: "w", img: "", difficulty: 0},
-    {name: "w", img: "", difficulty: 0},
-    {name: "w", img: "", difficulty: 0},
-    {name: "w", img: "", difficulty: 0},
-    {name: "w", img: "", difficulty: 0},
+    {name: "w", img: Test, difficulty: 0, path: "/quizes/0"},
+    {name: "w", img: Test, difficulty: 0, path: "/quizes/0"},
+    {name: "w", img: Test, difficulty: 0, path: "/quizes/0"},
+    {name: "w", img: Test, difficulty: 0, path: "/quizes/0"},
+    {name: "w", img: Test, difficulty: 0, path: "/quizes/0"},
+    {name: "w", img: Test, difficulty: 0, path: "/quizes/0"},
   ] 
 
   return (
@@ -25,7 +26,8 @@ export default function Home() {
       <main>
         <Navbar />
         <h1 className="mt-7 mb-7 ml-6 mr-6 text-3xl font-bold">Welcome!</h1>
-        <QuizDisplay quizDisplayData={data} />
+        <QuizDisplay quizDisplayData={data} theme="Check out these quizes:" />
+        <QuizDisplay quizDisplayData={data} theme="and these too!" />
       </main>
     </div>
   )
