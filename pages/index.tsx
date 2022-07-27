@@ -1,7 +1,19 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar/Navbar'
+import QuizDisplay from '../components/QuizDisplay/QuizDisplay'
+
+
 
 export default function Home() {
+  const data = [
+    {name: "w", img: "", difficulty: 0},
+    {name: "w", img: "", difficulty: 0},
+    {name: "w", img: "", difficulty: 0},
+    {name: "w", img: "", difficulty: 0},
+    {name: "w", img: "", difficulty: 0},
+    {name: "w", img: "", difficulty: 0},
+  ] 
+
   return (
     <div>
       <Head>
@@ -12,8 +24,8 @@ export default function Home() {
 
       <main>
         <Navbar />
-
-
+        <h1 className="mt-7 mb-7 ml-6 mr-6 text-3xl font-bold">Welcome!</h1>
+        <QuizDisplay quizDisplayData={data} />
       </main>
     </div>
   )
