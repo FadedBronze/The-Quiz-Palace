@@ -21,7 +21,7 @@ function Navbar() {
     return (
         // Navbar
         <>
-            <div className="w-full bg-gray-100 h-24 fixed top-0 text-black flex justify-between">
+            <div className="w-full bg-gray-100 h-24 fixed top-0 text-black flex justify-between z-20 shadow-sm">
                 {/* logo and name container */}
                 <div className="m-3 flex gap-3 w-fit h-fit items-center">
                     {/* logo */}
@@ -31,7 +31,7 @@ function Navbar() {
                 </div>
 
                 {/* navigation */}
-                <nav className="flex h-fit w-96 justify-between m-4">
+                <nav className="flex h-fit w-fit gap-5 justify-between m-4">
                     <SitePageLink href="/" img={Home} name="Home" />
                     <SitePageLink href="/" img={About} name="About" />
                     <SitePageLink href="/" img={Daily} name="Daily" />

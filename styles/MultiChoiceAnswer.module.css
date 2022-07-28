@@ -1,0 +1,12 @@
+.MultiChoiceAnswer:hover > div {
+    animation: buttonAnim 250ms forwards;
+}
+
+@keyframes buttonAnim {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 4px);
+    }
+}
