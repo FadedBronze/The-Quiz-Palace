@@ -11,15 +11,15 @@ type QuizData = {
     name: string; 
     questions: {
         name: string; 
-        correct: number[]; 
-        answers: string[]; 
+        answers: {name: string, correct: boolean}[];
     }[];
 }
 
 function Quiz() {
     const router = useRouter()
-
     const [data, setData]: [QuizData, (value: QuizData) => void] = useState() 
+    const [correctIndexs, setCorrectIndexs]: [boolean[], (value: boolean[]) => void] = useState([])
+    const [quizDone, setQuizDone] = useState(false)
 
     useEffect(() => {
         if (!router.isReady) return
@@ -36,7 +36,40 @@ function Quiz() {
             <Navbar />
             <h1 className="m-10 mb-16 text-4xl font-bold">{ data.name }:</h1>
             <div>
-                {data.questions.map(question => <MultiChoiceQuestion key={uuid()} question={question}/>)}
+                {data.questions.map((question, index) => 
+                    <MultiChoiceQuestion
+                        quizDone={quizDone}
+                        key={uuid()} 
+                        setCorrect={
+                            value => {
+                                const newCorrectIndexs = correctIndexs
+                                newCorrectIndexs[index] = value
+                                setCorrectIndexs(newCorrectIndexs)
+                                console.log(correctIndexs)
+                            }
+                        }
+                        correct={correctIndexs[index]}
+                        question={question}
+                    />
+                )}
+            </div>
+
+            <div className="w-full h-96 bg-gray-300">
+                <button 
+                    className="m-10 mb-0 w-24 h-14 bg-green-300 rounded-md"
+                    onClick={() => {
+                        setQuizDone(true)
+                    }}
+                >SUBMIT</button>
+                {quizDone && <div className="text-center m-10 pt-10 h-52 bg-gray-200">
+                    <h1 className="text-xl font-bold" >Stats:</h1>
+                    <h2 className="text-2xl">
+                        Accuracy: 
+                    </h2>
+                    <h2 className="text-2xl">
+                        Correct: 
+                    </h2>
+                </div>}
             </div>
         </div>
     )

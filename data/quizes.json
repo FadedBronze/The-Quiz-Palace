@@ -3,53 +3,39 @@
         "name": "quiz of the quiz",
         "questions": [
             {
-                "name": "idk1", 
-                "correct": [0],
+                "name": "idk1",
                 "answers": [
-                    "1",
-                    "2",
-                    "3",
-                    "4"
+                    {"correct": true, "name": "1"},
+                    {"correct": false, "name": "2"},
+                    {"correct": false, "name": "3"},
+                    {"correct": false, "name": "4"}
                 ]
             },
             {
-                "name": "idk1", 
-                "correct": [0],
+                "name": "idk1",
                 "answers": [
-                    "1",
-                    "2",
-                    "3",
-                    "4"
+                    {"correct": true, "name": "1"},
+                    {"correct": false, "name": "2"},
+                    {"correct": false, "name": "3"},
+                    {"correct": false, "name": "4"}
                 ]
             },
             {
-                "name": "idk1", 
-                "correct": [0],
+                "name": "idk1",
                 "answers": [
-                    "1",
-                    "2",
-                    "3",
-                    "4"
+                    {"correct": true, "name": "1"},
+                    {"correct": false, "name": "2"},
+                    {"correct": false, "name": "3"},
+                    {"correct": false, "name": "4"}
                 ]
             },
             {
-                "name": "idk1", 
-                "correct": [0],
+                "name": "idk1",
                 "answers": [
-                    "1",
-                    "2",
-                    "3",
-                    "4"
-                ]
-            },
-            {
-                "name": "idk1", 
-                "correct": [0],
-                "answers": [
-                    "1",
-                    "2",
-                    "3",
-                    "4"
+                    {"correct": true, "name": "1"},
+                    {"correct": false, "name": "2"},
+                    {"correct": false, "name": "3"},
+                    {"correct": false, "name": "4"}
                 ]
             }
         ]
