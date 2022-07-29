@@ -49,34 +49,42 @@
                     {"correct": false, "name": "photothymisis"},
                     {"correct": false, "name": "recollection"},
                     {"correct": false, "name": "blastproduction"},
-                    {"correct": false, "name": "photosynthesis"}
+                    {"correct": true, "name": "photosynthesis"}
                 ]
             },
             {
-                "name": "19 x 3",
+                "name": "What is H20",
                 "answers": [
-                    {"correct": false, "name": "1"},
-                    {"correct": true, "name": "51"},
-                    {"correct": false, "name": "3"},
-                    {"correct": true, "name": "25 + 26"}
+                    {"correct": true, "name": "Water"},
+                    {"correct": true, "name": "Nothing cuz thats not an O"},
+                    {"correct": false, "name": "Potato"},
+                    {"correct": false, "name": "None of the above"}
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Really Bad Jokes",
+        "questions": [
+            {
+                "name": "What did the pirate say when he turned 80?",
+                "answers": [
+                    {"correct": false, "name": "Im not ThAAt old"},
+                    {"correct": true, "name": "ayee 80!"}
                 ]
             },
             {
-                "name": "(2 + 2) x 5",
+                "name": "What do you call a fish with no eyes?",
                 "answers": [
-                    {"correct": false, "name": "12"},
-                    {"correct": false, "name": "18"},
-                    {"correct": false, "name": "22"},
-                    {"correct": true, "name": "20"}
+                    {"correct": false, "name": "Blind fish?"},
+                    {"correct": true, "name": "a FSH!"}
                 ]
             },
             {
-                "name": "(5 + 10) / 3",
+                "name": "What do you cow that got its legs eaten by a tiger?",
                 "answers": [
-                    {"correct": false, "name": "45"},
-                    {"correct": false, "name": "0"},
-                    {"correct": false, "name": "3"},
-                    {"correct": true, "name": "5"}
+                    {"correct": false, "name": "Why did the tiger finish?"},
+                    {"correct": true, "name": "GRRound beef!"}
                 ]
             }
         ]

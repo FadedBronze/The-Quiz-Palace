@@ -3,7 +3,7 @@ import Logo from "../../public/images/Logo.png"
 import Daily from "../../public/images/Daily.png"
 import Home from "../../public/images/Home.png"
 import About from "../../public/images/About.png"
-import Search from "../../public/images/Search.png"
+// import Search from "../../public/images/Search.png"
 
 // components
 
@@ -33,9 +33,9 @@ function Navbar() {
                 {/* navigation */}
                 <nav className="flex h-fit w-fit gap-5 justify-between m-4">
                     <SitePageLink href="/" img={Home} name="Home" />
-                    <SitePageLink href="/" img={About} name="About" />
-                    <SitePageLink href="/" img={Daily} name="Daily" />
-                    <SitePageLink href="/" img={Search} name="Search" />
+                    <SitePageLink href="/about" img={About} name="About" />
+                    <SitePageLink href="/quizes/0" img={Daily} name="Daily" />
+                    {/* <SitePageLink href="/" img={Search} name="Search" /> */}
                 </nav>
             </div>
             {/* for some margin underneath navbar */}
