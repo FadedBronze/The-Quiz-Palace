@@ -3,6 +3,7 @@ import {v4 as uuid} from 'uuid'
 
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
+import { motion } from 'framer-motion'
 
 import quizesData from '../../data/quizes.json'
 import MultiChoiceQuestion from "../../components/MultiChoiceQuestion/MultiChoiceQuestion"
@@ -19,6 +20,8 @@ function Quiz() {
     const router = useRouter()
     const [data, setData]: [QuizData, (value: QuizData) => void] = useState() 
     const [correctIndexs, setCorrectIndexs]: [boolean[], (value: boolean[]) => void] = useState([])
+    const [selected, setSelected]: [number[], (value: number[]) => void] = useState([])
+
     const [quizDone, setQuizDone] = useState(false)
 
     useEffect(() => {
@@ -42,32 +45,42 @@ function Quiz() {
                         key={uuid()} 
                         setCorrect={
                             value => {
-                                const newCorrectIndexs = correctIndexs
+                                const newCorrectIndexs = [...correctIndexs]
                                 newCorrectIndexs[index] = value
                                 setCorrectIndexs(newCorrectIndexs)
-                                console.log(correctIndexs)
                             }
                         }
-                        correct={correctIndexs[index]}
                         question={question}
+                        selected={selected[index]}
+                        setSelected={
+                            value => {
+                                const newSelected = [...selected]
+                                newSelected[index] = value
+                                setSelected(newSelected)
+                            }
+                        }
                     />
                 )}
             </div>
 
             <div className="w-full h-96 bg-gray-300">
-                <button 
+                <motion.button 
                     className="m-10 mb-0 w-24 h-14 bg-green-300 rounded-md"
                     onClick={() => {
+                        if (correctIndexs.length != data.questions.length) return
                         setQuizDone(true)
                     }}
-                >SUBMIT</button>
+                    whileHover={{
+                        scale: 1.1
+                    }}
+                >SUBMIT</motion.button>
                 {quizDone && <div className="text-center m-10 pt-10 h-52 bg-gray-200">
                     <h1 className="text-xl font-bold" >Stats:</h1>
                     <h2 className="text-2xl">
-                        Accuracy: 
+                        Accuracy: {correctIndexs.filter(correctIndex => correctIndex == true).length / correctIndexs.length * 100}% 
                     </h2>
                     <h2 className="text-2xl">
-                        Correct: 
+                        Correct: {correctIndexs.filter(correctIndex => correctIndex == true).length} / {correctIndexs.length}
                     </h2>
                 </div>}
             </div>

@@ -1,41 +1,82 @@
 [
     {
-        "name": "quiz of the quiz",
+        "name": "Math Quiz",
         "questions": [
             {
-                "name": "idk1",
+                "name": "1 + 2",
                 "answers": [
-                    {"correct": true, "name": "1"},
-                    {"correct": false, "name": "2"},
-                    {"correct": false, "name": "3"},
-                    {"correct": false, "name": "4"}
+                    {"correct": true, "name": "3"},
+                    {"correct": false, "name": "7"},
+                    {"correct": false, "name": "69"},
+                    {"correct": false, "name": "420"}
                 ]
             },
             {
-                "name": "idk1",
+                "name": "19 x 3",
                 "answers": [
-                    {"correct": true, "name": "1"},
-                    {"correct": false, "name": "2"},
+                    {"correct": false, "name": "1"},
+                    {"correct": true, "name": "51"},
                     {"correct": false, "name": "3"},
-                    {"correct": false, "name": "4"}
+                    {"correct": true, "name": "25 + 26"}
                 ]
             },
             {
-                "name": "idk1",
+                "name": "(2 + 2) x 5",
                 "answers": [
-                    {"correct": true, "name": "1"},
-                    {"correct": false, "name": "2"},
-                    {"correct": false, "name": "3"},
-                    {"correct": false, "name": "4"}
+                    {"correct": false, "name": "12"},
+                    {"correct": false, "name": "18"},
+                    {"correct": false, "name": "22"},
+                    {"correct": true, "name": "20"}
                 ]
             },
             {
-                "name": "idk1",
+                "name": "(5 + 10) / 3",
                 "answers": [
-                    {"correct": true, "name": "1"},
-                    {"correct": false, "name": "2"},
+                    {"correct": false, "name": "45"},
+                    {"correct": false, "name": "0"},
                     {"correct": false, "name": "3"},
-                    {"correct": false, "name": "4"}
+                    {"correct": true, "name": "5"}
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Science Quiz",
+        "questions": [
+            {
+                "name": "What is the process plants go through to make food",
+                "answers": [
+                    {"correct": false, "name": "photothymisis"},
+                    {"correct": false, "name": "recollection"},
+                    {"correct": false, "name": "blastproduction"},
+                    {"correct": false, "name": "photosynthesis"}
+                ]
+            },
+            {
+                "name": "19 x 3",
+                "answers": [
+                    {"correct": false, "name": "1"},
+                    {"correct": true, "name": "51"},
+                    {"correct": false, "name": "3"},
+                    {"correct": true, "name": "25 + 26"}
+                ]
+            },
+            {
+                "name": "(2 + 2) x 5",
+                "answers": [
+                    {"correct": false, "name": "12"},
+                    {"correct": false, "name": "18"},
+                    {"correct": false, "name": "22"},
+                    {"correct": true, "name": "20"}
+                ]
+            },
+            {
+                "name": "(5 + 10) / 3",
+                "answers": [
+                    {"correct": false, "name": "45"},
+                    {"correct": false, "name": "0"},
+                    {"correct": false, "name": "3"},
+                    {"correct": true, "name": "5"}
                 ]
             }
         ]

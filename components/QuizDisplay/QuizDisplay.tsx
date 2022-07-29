@@ -23,14 +23,14 @@ function QuizDisplay({quizDisplayData, theme}: Props) {
     useInterval(() => {
         if (hovering) return
 
-        scrollRef.current.scrollLeft += 2
+        scrollRef.current.scrollLeft += 3
 
         if (scroll == scrollRef.current.scrollLeft) {
             scrollRef.current.scrollLeft = 0
         }
 
         setScroll(scrollRef.current.scrollLeft)
-    }, 70)
+    }, 25)
 
     return (
         <div className="" >
