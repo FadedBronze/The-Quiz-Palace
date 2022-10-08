@@ -39,54 +39,5 @@
                 ]
             }
         ]
-    },
-    {
-        "name": "Science Quiz",
-        "questions": [
-            {
-                "name": "What is the process plants go through to make food",
-                "answers": [
-                    {"correct": false, "name": "photothymisis"},
-                    {"correct": false, "name": "recollection"},
-                    {"correct": false, "name": "blastproduction"},
-                    {"correct": true, "name": "photosynthesis"}
-                ]
-            },
-            {
-                "name": "What is H20",
-                "answers": [
-                    {"correct": true, "name": "Water"},
-                    {"correct": true, "name": "Nothing cuz thats not an O"},
-                    {"correct": false, "name": "Potato"},
-                    {"correct": false, "name": "None of the above"}
-                ]
-            }
-        ]
-    },
-    {
-        "name": "Really Bad Jokes",
-        "questions": [
-            {
-                "name": "What did the pirate say when he turned 80?",
-                "answers": [
-                    {"correct": false, "name": "Im not ThAAt old"},
-                    {"correct": true, "name": "ayee 80!"}
-                ]
-            },
-            {
-                "name": "What do you call a fish with no eyes?",
-                "answers": [
-                    {"correct": false, "name": "Blind fish?"},
-                    {"correct": true, "name": "a FSH!"}
-                ]
-            },
-            {
-                "name": "What do you cow that got its legs eaten by a tiger?",
-                "answers": [
-                    {"correct": false, "name": "Why did the tiger finish?"},
-                    {"correct": true, "name": "GRRound beef!"}
-                ]
-            }
-        ]
     }
 ]
